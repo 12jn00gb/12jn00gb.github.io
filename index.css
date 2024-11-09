@@ -1,0 +1,14 @@
+body
+{
+	background:#0c0c0c;
+}
+#header
+{
+	height:0px;
+	background:#0c0c0c;
+	font-family:arial;
+	font-weight:bold;
+	color:#4bafff;
+	text-align:center;
+	margin-top:-75px;
+}
