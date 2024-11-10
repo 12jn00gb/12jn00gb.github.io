@@ -1,14 +1,35 @@
 body
 {
-	background:#0c0c0c;
+	background-image:url("wallpaper.png");
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	overflow:hidden;
+	margin:0;
 }
 #header
 {
 	height:0px;
+	width:860px;
+	background:#0c0c0c;
+	padding-left: 200px;
+	text-align:center;
+	margin:0 auto;
+}
+#main
+{
+	height:100svh;
+	width:1000px;
 	background:#0c0c0c;
 	font-family:arial;
 	font-weight:bold;
 	color:#4bafff;
 	text-align:center;
-	margin-top:-75px;
+	margin:0 auto;
+}
+#bar
+{
+	height:100svh;
+	width:200px;
+	background:#00327d;
 }
