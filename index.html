@@ -5,37 +5,5 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="main">
-        <!-- Full-width header on top -->
-        
-        <!-- Flex container for content and sidebar -->
-        <div id="content-bar-container">
-            <div id="content">
-	<div id="header">
-		<img src="banner.gif" height="150px">
-	</div>
-                <div id="textToToggle" style="display: none;">
-                    <p>Under Construction</p>
-                </div>
-            </div>
-            
-            <!-- Sidebar area -->
-            <div id="bar">
-                <img src="avatar.png" height="150px" style="border: 3px solid #000000">
-                <button onclick="toggleText()">Social Media</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function toggleText() {
-            var text = document.getElementById("textToToggle");
-            if (text.style.display === "none" || text.style.display === "") {
-                text.style.display = "block";
-            } else {
-                text.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
