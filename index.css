@@ -1,35 +1,62 @@
-body
-{
-	background-image:url("wallpaper.png");
-	background-position:center;
-	background-size:cover;
-	background-attachment:fixed;
-	overflow:hidden;
-	margin:0;
+body {
+    background-image: url("wallpaper.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin: 0;
 }
-#header
-{
-	height:0px;
-	width:860px;
-	background:#0c0c0c;
-	padding-left: 200px;
-	text-align:center;
-	margin:0 auto;
+
+#main {
+    display: flex;
+    flex-direction: column; /* Stack header on top of content-bar area */
+    align-items: center;
+    background: #0c0c0c;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #4bafff;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px; /* Maximum width to keep layout centered */
 }
-#main
-{
-	height:100svh;
-	width:1000px;
-	background:#0c0c0c;
-	font-family:arial;
-	font-weight:bold;
-	color:#4bafff;
-	text-align:center;
-	margin:0 auto;
+
+#header {
+    width: 100%; /* Full width for the header */
+    background-color: #0c0c0c;
+    padding: 15px 0;
+    text-align: center;
 }
-#bar
-{
-	height:100svh;
-	width:200px;
-	background:#00327d;
+
+#content-bar-container {
+    display: flex; /* Display content and bar side by side */
+    width: 100%;
+    flex-direction: row-reverse;
+}
+
+#content {
+    flex: 1; /* Allows content to take up remaining space */
+    padding: 20px;
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+#bar {
+    width: 200px; /* Fixed width for the sidebar */
+    height: 100vh;
+    background: #00327d;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4bafff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
 }
