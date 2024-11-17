@@ -3,6 +3,59 @@
 <head>
     <title>12jn00gb</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Ensuring proper alignment of the labels in the link items */
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .link-item {
+            display: flex;
+            align-items: baseline;
+        }
+        .label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+        
+        /* Style for the active tab (highlighted button) */
+        .active-tab {
+            background-color: #4bafff;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* Button hover styling */
+button:hover {
+    background-color: #000000;
+    color: #4bafff;
+}
+
+/* Disable hover for active tab */
+button.active-tab:hover {
+    background-color: #4bafff; /* Keep the same color as the active tab */
+    color: #000000;
+}
+
+    </style>
 </head>
 <body>
     <div id="main">
@@ -12,64 +65,84 @@
                     <img src="banner.gif" height="150px">
                 </div>
                 
-                <!-- First toggleable content area -->
-                <div id="textToToggle" style="display: none; text-align: left; padding-top: 10px">
-                    <h1>External Links</h1>
+                <!-- First toggleable content area (renamed to externalLinksContent) -->
+                <div id="externalLinksContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
+                    <h1>Profiles:</h1>
                     <div class="link-container">
                         <div class="link-item"><span class="label">YouTube:</span> <a href="https://youtube.com/12jn00gb" style="color: #4bafff">https://youtube.com/12jn00gb</a></div>
                         <div class="link-item"><span class="label">Discord:</span> <a href="https://discord.com/invite/9umTrtY" style="color: #4bafff">https://discord.com/invite/9umTrtY</a></div>
                         <div class="link-item"><span class="label">Steam:</span> <a href="https://steamcommunity.com/id/12jn00gb" style="color: #4bafff">https://steamcommunity.com/id/12jn00gb</a></div>
                         <div class="link-item"><span class="label">X:</span> <a href="https://x.com/12jn00gb" style="color: #4bafff">https://x.com/12jn00gb</a></div>
                         <div class="link-item"><span class="label">Reddit:</span> <a href="https://reddit.com/user/12jn00gb" style="color: #4bafff">https://reddit.com/user/12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Game Jolt:</span> <a href="https://gamejolt.com/@12jn00gb" style="color: #4bafff">https://gamejolt.com/@12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Roblox:</span> <a href="https://roblox.com/users/478445092/profile" style="color: #4bafff">https://roblox.com/users/478445092/profile</a></div>
-                        <div class="link-item"><span class="label">KoGaMa:</span> <a href="https://www.kogama.com/profile/13898252" style="color: #4bafff">https://www.kogama.com/profile/13898252</a></div>
-                        <div class="link-item"><span class="label">Jstris:</span> <a href="https://jstris.jezevec10.com/u/12jn00gb" style="color: #4bafff">https://jstris.jezevec10.com/u/12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Planet Minecraft:</span> <a href="https://planetminecraft.com/member/12jn00gb" style="color: #4bafff">https://planetminecraft.com/member/12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Minecraft Mapy:</span> <a href="https://minecraftmapy.pl/profil/12jn00gb" style="color: #4bafff">https://minecraftmapy.pl/profil/12jn00gb</a></div>
                     </div>
-
-                    <style>
-                        .link-container {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 5px;
-                        }
-                        .link-item {
-                            display: flex;
-                            align-items: baseline;
-                        }
-                        .label {
-                            display: inline-block;
-                            width: 140px;
-                            text-align: right;
-                            padding-right: 10px;
-                            font-weight: bold;
-                        }
-                    </style>
                 </div>
                 
                 <!-- Second toggleable content area -->
-                <div id="additionalContent" style="display: none; text-align: left; padding-top: 10px">
-                    <h1>Home Page</h1>
-                    <p>Coming Soon</p>
+                <div id="additionalContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
+                    <h1>Welcome!</h1>
+                    <p>I made this website to provide quick access to all my profiles, projects, and additional information. Check out the other tabs to learn more. Thanks!</p>
                 </div>
+
+                <!-- Third toggleable content area -->
+                <div id="thirdContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
+                    <h1>Projects:</h1>
+                    <div class="link-container">
+                        <div class="link-item"><span class="label">Game Jolt:</span> <a href="https://gamejolt.com/@12jn00gb" style="color: #4bafff">https://gamejolt.com/@12jn00gb</a></div>
+                        <div class="link-item"><span class="label">Roblox:</span> <a href="https://roblox.com/users/478445092/profile" style="color: #4bafff">https://roblox.com/users/478445092/profile</a></div>
+                        <div class="link-item"><span class="label">Planet Minecraft:</span> <a href="https://planetminecraft.com/member/12jn00gb" style="color: #4bafff">https://planetminecraft.com/member/12jn00gb</a></div>
+                        <div class="link-item"><span class="label">Minecraft Mapy:</span> <a href="https://minecraftmapy.pl/profil/12jn00gb" style="color: #4bafff">https://minecraftmapy.pl/profil/12jn00gb</a></div>
+                    </div>
+                </div>
+                
+<div id="hardwareContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
+    <h1>Hardware</h1>
+    <div class="link-container">
+        <h3>Internal:</h3>
+        <div class="link-item"><span class="label">Operating System:</span><div style="color: #4bafff">Windows 7</div></div>
+        <div class="link-item"><span class="label">Processor:</span><div style="color: #4bafff">Intel Core i3-3120M</div></div>
+        <div class="link-item"><span class="label">Graphics Card:</span><div style="color: #4bafff">NVIDIA GeForce GT 740M</div></div>
+        <div class="link-item"><span class="label">Memory:</span><div style="color: #4bafff">4 GB RAM</div></div>
+        <h3>External:</h3>
+        <div class="link-item"><span class="label">Mouse:</span><div style="color: #4bafff">Corsair Harpoon RGB Wireless</div></div>
+        <div class="link-item"><span class="label">Headphones:</span><div style="color: #4bafff">Philips SHL3075BK</div></div>
+    </div>
+</div>
             </div>
             
-            <div id="bar">
-                <img src="avatar.png" height="150px" style="border: 3px solid #000000">
-                <!-- Second button to toggle About Me content -->
-                <button onclick="toggleContent('additionalContent')">Home Page</button>
-                <!-- First button to toggle External Links -->
-                <button onclick="toggleContent('textToToggle')">External Links</button>
-            </div>
+<div id="bar">
+    <img src="avatar.png" height="150px" style="border: 3px solid #000000">
+    <!-- Button container to control positioning separately from the image -->
+    <div id="button-container">
+        <button id="homePageBtn" onclick="toggleContent('additionalContent', this)">Home Page</button>
+        <button id="externalLinksBtn" onclick="toggleContent('externalLinksContent', this)">Media</button>
+        <button id="aboutMeBtn" onclick="toggleContent('thirdContent', this)">Projects</button>
+        <button id="hardwareBtn" onclick="toggleContent('hardwareContent', this)">Hardware</button>
+    </div>
+</div>
+
         </div>
     </div>
 
     <script>
-        function toggleContent(contentId) {
+        function toggleContent(contentId, button) {
+            // Get all content sections and hide them
+            var contents = document.querySelectorAll('[id$="Content"]'); // Selects all content sections with IDs ending in "Content"
+            contents.forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Hide all buttons' active tab state
+            var buttons = document.querySelectorAll('button');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active-tab');
+            });
+
+            // Display the selected content section
             var content = document.getElementById(contentId);
-            content.style.display = content.style.display === "none" || content.style.display === "" ? "block" : "none";
+            content.style.display = 'block';
+
+            // Add the 'active-tab' class to the clicked button
+            button.classList.add('active-tab');
         }
     </script>
 </body>
