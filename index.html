@@ -10,13 +10,19 @@
             flex-direction: column;
             gap: 5px;
         }
+        .container-container {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: space-between;
+        }
         .link-item {
             display: flex;
             align-items: baseline;
         }
         .label {
             display: inline-block;
-            width: 150px;
+            width: 160px;
             text-align: right;
             padding-right: 10px;
             font-weight: bold;
@@ -67,42 +73,128 @@ button.active-tab:hover {
                 
                 <!-- First toggleable content area (renamed to externalLinksContent) -->
                 <div id="externalLinksContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
-                    <h1>Profiles:</h1>
+                    <h1>Media</h1>
                     <div class="link-container">
+	      <p></p>
+	      <div class="link-item"><span class="label">★</span><a>My Profiles</a></div>
                         <div class="link-item"><span class="label">YouTube:</span> <a href="https://youtube.com/12jn00gb" style="color: #4bafff">https://youtube.com/12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Discord:</span> <a href="https://discord.com/invite/9umTrtY" style="color: #4bafff">https://discord.com/invite/9umTrtY</a></div>
                         <div class="link-item"><span class="label">Steam:</span> <a href="https://steamcommunity.com/id/12jn00gb" style="color: #4bafff">https://steamcommunity.com/id/12jn00gb</a></div>
                         <div class="link-item"><span class="label">X:</span> <a href="https://x.com/12jn00gb" style="color: #4bafff">https://x.com/12jn00gb</a></div>
                         <div class="link-item"><span class="label">Reddit:</span> <a href="https://reddit.com/user/12jn00gb" style="color: #4bafff">https://reddit.com/user/12jn00gb</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Discord Server</a></div>
+	      <div class="link-item"><span class="label">Discord:</span> <a href="https://discord.com/invite/9umTrtY" style="color: #4bafff">https://discord.com/invite/9umTrtY</a></div>
                     </div>
                 </div>
                 
                 <!-- Second toggleable content area -->
                 <div id="additionalContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
                     <h1>Welcome!</h1>
-                    <p>I made this website to provide quick access to all my profiles, projects, and additional information. Check out the other tabs to learn more. Thanks!</p>
+                    <h3>I made this website to provide quick access to all my profiles, projects, <br>and other information that some people might find useful.</h3>
+	  <h3>I will do my best to keep everything up-to-date.</h3>
+	  <h3>Check out the other tabs to learn more.</h3>
+	  <h3>Thanks!</h3>
                 </div>
 
                 <!-- Third toggleable content area -->
                 <div id="thirdContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
-                    <h1>Projects:</h1>
-                    <div class="link-container">
-                        <div class="link-item"><span class="label">Game Jolt:</span> <a href="https://gamejolt.com/@12jn00gb" style="color: #4bafff">https://gamejolt.com/@12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Roblox:</span> <a href="https://roblox.com/users/478445092/profile" style="color: #4bafff">https://roblox.com/users/478445092/profile</a></div>
-                        <div class="link-item"><span class="label">Planet Minecraft:</span> <a href="https://planetminecraft.com/member/12jn00gb" style="color: #4bafff">https://planetminecraft.com/member/12jn00gb</a></div>
-                        <div class="link-item"><span class="label">Minecraft Mapy:</span> <a href="https://minecraftmapy.pl/profil/12jn00gb" style="color: #4bafff">https://minecraftmapy.pl/profil/12jn00gb</a></div>
+                    <h1>Projects</h1>
+	  <h3>List of all my published projects.</h3>
+                    <div class="container-container">
+	      <div class="link-container">
+	      <p></p>
+	      <div class="link-item"><span class="label">★</span><a>Games</a></div>
+                        <div class="link-item"><span class="label">Chicken Dungeon:</span><a href="https://gamejolt.com/games/chicken_dungeon/763890" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Roblox</a></div>
+	      <div class="link-item"><span class="label">Domination:</span><a href="https://roblox.com/games/12196158951/Domination" style="color: #4bafff">LINK</a></div>
+                        <br>
+	      <div class="link-item"><span class="label">★</span><a>Scratch</a></div>
+	      <div class="link-item"><span class="label">Team-Pong:</span><a href="https://scratch.mit.edu/projects/215704430" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">The Church:</span><a href="https://scratch.mit.edu/projects/1128344288" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Minecraft</a></div>
+	      <div class="link-item"><span class="label">CommandRun:</span><a href="https://minecraftmapy.pl/mapa/X9Rwxc" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">MiniWorld:</span><a href="https://minecraftmapy.pl/mapa/HSbhHd" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">MiniGames Hub:</span><a href="https://minecraftmapy.pl/mapa/aIAp75" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Zgadnij Kto To:</span><a href="https://minecraftmapy.pl/mapa/7zPY6O" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">PARKOURS:</span><a href="https://minecraftmapy.pl/mapa/fTDVVu" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">TeamWork:</span><a href="https://minecraftmapy.pl/mapa/DoXOXv" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">The Block Is Lava:</span><a href="https://minecraftmapy.pl/mapa/aj4W77" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Chest Opening:</span><a href="https://minecraftmapy.pl/mapa/L21AF5" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">RedstoneEngineer:</span><a href="https://minecraftmapy.pl/mapa/VS0Bku" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Effective Gels 2:</span><a href="https://minecraftmapy.pl/mapa/92FnZu" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">12jn00gb Overlay:</span><a href="https://planetminecraft.com/texture-pack/12jn00gb-overlay-alpha" style="color: #4bafff">LINK</a></div>
+                        <br>
+	      <div class="link-item"><span class="label">★</span><a>Garry's Mod</a></div>
+	      <div class="link-item"><span class="label">map_teaming_z:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1878569827" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">map_prison_rp:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2140344655" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">map_adventure_v:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2564780302" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">map_trilogy_x:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2581138902" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Koni:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1711189919" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">r0lly:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3239566661" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Scrap Mechanic</a></div>
+	      <div class="link-item"><span class="label">B1T #q Helicopter:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2454088653" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">B1T #q Jeep:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2463237550" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">B1T #q Jet:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2525111134" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">B1T #q Tank:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2686380436" style="color: #4bafff">LINK</a></div>
+	      </div>
+	      <div class="link-container">
+	      <p></p>
+	      <div class="link-item"><span class="label">★</span><a>Quizzes</a></div>
+	      <div class="link-item"><span class="label">QUIZ FNaF:</span><a href="https://samequizy.pl/czy-przetrwasz-jedna-noc-w-fnaf1" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">QUIZ Angry Birds:</span><a href="https://samequizy.pl/jak-dobrze-znasz-sie-na-angry-birds" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">QUIZ Minecraft:</span><a href="https://samequizy.pl/jak-dobrze-znasz-sie-na-minecraft-16" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Peleryny Minecraft:</span><a href="https://samequizy.pl/czy-znasz-historie-pelerynek-w-minecraft" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Herby Województw:</span><a href="https://www.geoguessr.com/pl/quiz/e3fe8f87-cdfd-4230-858f-093a01b70a1d" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Minecraft [PL]:</span><a href="https://create.kahoot.it/details/4a347f4e-8ba3-4e5a-8e82-5b9c07665b19" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Minecraft [GE]:</span><a href="https://create.kahoot.it/details/6e8c0dbe-55f8-466e-8530-9f24debd1617" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Golf With Your Friends</a></div>
+	      <div class="link-item"><span class="label">Golfik - Ekipa:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1438066757" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Statek - Ekipa:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1568313195" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Xmas2018 - Ekipa:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1604732417" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Portal 2</a></div>
+	      <div class="link-item"><span class="label">World for fun:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=969268927" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Co-op Master:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1453649630" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Trickiest Chamber:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1679133033" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Split Teamwork:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2174722319" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Bring Companion:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2899458902" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Bridge Constructor Portal</a></div>
+	      <div class="link-item"><span class="label">Tricky level:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3242947202" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Secret Neighbor</a></div>
+	      <div class="link-item"><span class="label">My House:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2907884793" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Trailmakers</a></div>
+	      <div class="link-item"><span class="label">12JN Jet:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2986974028" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>Counter-Strike 2</a></div>
+	      <div class="link-item"><span class="label">The Progression:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3160119824" style="color: #4bafff">LINK</a></div>
+	      <br>
+	      <div class="link-item"><span class="label">★</span><a>The Escapists 2</a></div>
+	      <div class="link-item"><span class="label">The Island Prison:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1558412988" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">Jungle Compound:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1781451667" style="color: #4bafff">LINK</a></div>
+	      <div class="link-item"><span class="label">16x16 Prison:</span><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1932843100" style="color: #4bafff">LINK</a></div>
+	      </div>
                     </div>
                 </div>
                 
 <div id="hardwareContent" style="display: none; text-align: left; padding-top: 35px; padding-left: 35px; padding-right: 35px">
     <h1>Hardware</h1>
+    <h3>Here you can find a short overview of my setup.</h3>
     <div class="link-container">
-        <h3>Internal:</h3>
+        <p></p>
+        <div class="link-item"><span class="label">★</span><a>Internal</a></div>
         <div class="link-item"><span class="label">Operating System:</span><div style="color: #4bafff">Windows 7</div></div>
         <div class="link-item"><span class="label">Processor:</span><div style="color: #4bafff">Intel Core i3-3120M</div></div>
         <div class="link-item"><span class="label">Graphics Card:</span><div style="color: #4bafff">NVIDIA GeForce GT 740M</div></div>
         <div class="link-item"><span class="label">Memory:</span><div style="color: #4bafff">4 GB RAM</div></div>
-        <h3>External:</h3>
+        <br>
+        <div class="link-item"><span class="label">★</span><a>External</a></div>
         <div class="link-item"><span class="label">Mouse:</span><div style="color: #4bafff">Corsair Harpoon RGB Wireless</div></div>
         <div class="link-item"><span class="label">Headphones:</span><div style="color: #4bafff">Philips SHL3075BK</div></div>
     </div>
@@ -124,6 +216,11 @@ button.active-tab:hover {
     </div>
 
     <script>
+    window.onload = function() {
+    var homePageBtn = document.getElementById("homePageBtn");
+    toggleContent("additionalContent", homePageBtn); // Display the Home Page content
+}
+
         function toggleContent(contentId, button) {
             // Get all content sections and hide them
             var contents = document.querySelectorAll('[id$="Content"]'); // Selects all content sections with IDs ending in "Content"

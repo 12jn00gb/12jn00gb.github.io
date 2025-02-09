@@ -1,9 +1,12 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-image: url("wallpaper.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -60,12 +63,15 @@ button:hover {
 /* Style for #bar to keep image at the top */
 #bar {
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - 50px);
     background: #00327d;
     padding: 25px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky; /* Utrzymuje pasek w widoku podczas przewijania */
+    top: 0; /* Ustawienie paska na górze głównej sekcji */
+    z-index: 10; /* Zapewnia, że pasek jest nad innymi elementami */
 }
 
 /* Move button container to the bottom of #bar */
