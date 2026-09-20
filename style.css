@@ -1,0 +1,114 @@
+html {
+      background: url('wallpaper.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow-y: scroll;
+}
+  
+body {
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0;
+      font-family: Arial;
+}
+
+.main-container {
+      min-width: 1000px;
+      display: flex;
+      justify-content: center;
+}
+  
+.nav-container {
+      background-color: #00327d;
+      width: 200px;
+      height: 100vh;
+      gap: 20px;
+      top: 0;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.nav-container img {
+      width: 150px;
+      height: 150px;
+      border: 3px solid #000000;
+      box-sizing: border-box;
+      margin-top: 25px;
+      margin-bottom: 25px;
+}
+
+.nav-container button {
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      width: 200px;
+      height: 45px;
+      border: 0;
+      cursor: pointer;
+}
+
+.nav-container button:hover {
+      color: #aaaaaa;
+}
+
+.nav-container button.active {
+      background-color: #aaaaaa;
+      color: #000000;
+}
+  
+.panel-container {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+}
+
+.header-container {
+      background-color: #0c0c0c;
+      display: flex;
+      justify-content: center;
+}
+
+.header-container img {
+      height: 150px;
+      margin-top: 20px;
+}
+
+.section-container {
+      background-color: #0c0c0c;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      padding-right: 50px;
+      flex: 1;
+}
+
+.links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 40px;
+}
+  
+.link {
+      display: flex;
+      align-items: baseline;
+}
+  
+.label {
+      width: 160px;
+      text-align: right;
+      padding-right: 10px;
+}
+
+@media (max-width: 1000px) {
+      .main-container {
+            display: none;
+        }
+  }
